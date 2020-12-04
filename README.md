@@ -68,3 +68,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+##Meine ReadMe
+Ich habe mich nocht nicht definitiv für eine Library entschieden, 
+ich bin noch beim ausprobieren.
+
+Mögliche Libraryes:
+
+http://joyent.github.com/node-snmpjs/
+https://github.com/calmh/node-snmp-native

@@ -7,19 +7,21 @@ class Test extends Component {
     componentDidMount() {
         let data = JSON.stringify({"data":"hallo"});
 
+        const HEADERS = {
+            mode: 'cors',
+            credentials: 'include'
+        }
+
         let config = {
             method: 'post',
-            url: 'http://localhost:3000/backtest.php',
-            headers: {
-                'Access-Control-Allow-Origin': '*',
-                'Content-Type': 'application/json'
-            },
+            url: API_PATH,
+            headers: HEADERS,
             data : data
         };
 
         axios(config)
             .then(function (response) {
-                console.log(JSON.stringify(response.data));
+                console.log(response.data);
             })
             .catch(function (error) {
                 console.log(error);

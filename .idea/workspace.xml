@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21b20be0-8062-4a9b-bf56-a912231da00c" name="Default Changelist" comment="1.1Meilenstein">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backend/backtest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backend/net-snmp.js" afterDir="false" />
+    <list default="true" id="21b20be0-8062-4a9b-bf56-a912231da00c" name="Default Changelist" comment="2. Meilenstein&#10;Erste erfolge mit php">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/getDevices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/getDevices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/backtest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/backtest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +84,7 @@
       <workItem from="1607067350072" duration="9071000" />
       <workItem from="1607498507069" duration="666000" />
       <workItem from="1607512717651" duration="597000" />
+      <workItem from="1607591872937" duration="8373000" />
     </task>
     <task id="LOCAL-00001" summary="1.Meilenstein">
       <created>1607067584413</created>
@@ -111,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607067905526</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2. Meilenstein&#10;Erste erfolge mit php">
+      <created>1607591943817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607591943817</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +135,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.Meilenstein" />
     <MESSAGE value="1.1Meilenstein" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.1Meilenstein" />
+    <MESSAGE value="2. Meilenstein&#10;Erste erfolge mit php" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. Meilenstein&#10;Erste erfolge mit php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

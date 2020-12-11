@@ -73,10 +73,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### Meine ReadMe
-Ich habe mich nocht nicht definitiv für eine Library entschieden, 
-ich bin noch beim ausprobieren.
+Ich habe versucht das Backend mit NodeJs zu machen, aber es hat nicht Funktioniert. Dann habe ich es mit 
+php versucht und da Funktionierts einwandfrei.
 
-Mögliche Libraryes:
+Backend: man muss die datei src/backend/backtest.php ausführen (IP vom Comuter muss eingegeben werden --> Zeile 45)
 
-http://joyent.github.com/node-snmpjs/
-https://github.com/calmh/node-snmp-native
+Frontend: `npm start` zum starten, ausgabe der Ergebnisse erfolgt momentan nur über `console.log()`

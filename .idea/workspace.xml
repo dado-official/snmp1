@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21b20be0-8062-4a9b-bf56-a912231da00c" name="Default Changelist" comment="2. Meilenstein&#10;Cors fixed&#10;php returning JSON">
+      <change afterPath="$PROJECT_DIR$/src/backend/getIPs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/backend/pingAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/Devicelist.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/mainStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/backtest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/SNMPwalk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/getDevices.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/net-snmp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -33,9 +46,11 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/backend" />
+    <property name="javascript.nodejs.core.library.configured.version" value="14.5.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.20" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/backend/pingAll.js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,12 +58,15 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="pingAll.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="pingAll.js" working-dir="$PROJECT_DIR$/src/backend">
       <method v="2" />
     </configuration>
     <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$/src/backend" port="3000">
@@ -66,8 +84,9 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="PHP Built-in Web Server.Unnamed" />
+      <item itemvalue="Node.js.pingAll.js" />
       <item itemvalue="npm.npm start" />
+      <item itemvalue="PHP Built-in Web Server.Unnamed" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -84,6 +103,19 @@
       <workItem from="1607512717651" duration="597000" />
       <workItem from="1607591872937" duration="8999000" />
       <workItem from="1607672692885" duration="10000" />
+      <workItem from="1607767321717" duration="2878000" />
+      <workItem from="1607780759640" duration="6062000" />
+      <workItem from="1607852549837" duration="2817000" />
+      <workItem from="1607941746719" duration="118000" />
+      <workItem from="1608735317395" duration="11000" />
+      <workItem from="1608736322885" duration="1361000" />
+      <workItem from="1609759426741" duration="1677000" />
+      <workItem from="1609768413553" duration="2857000" />
+      <workItem from="1610011162377" duration="3437000" />
+      <workItem from="1610045795776" duration="11825000" />
+      <workItem from="1610095919071" duration="1470000" />
+      <workItem from="1610097724381" duration="7491000" />
+      <workItem from="1610131326357" duration="14756000" />
     </task>
     <task id="LOCAL-00001" summary="1.Meilenstein">
       <created>1607067584413</created>

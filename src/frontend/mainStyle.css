@@ -1,0 +1,80 @@
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background: #ff6600;
+    width: 100%;
+}
+
+html, body {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #a1a1a1;
+}
+
+.container{
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin: 0.2%;
+    width: 100%;
+}
+
+#contaiermain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#top{
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    padding: 0.2%;
+    margin: 0.2%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button{
+    padding: 0.5%;
+    background: #ff6600;
+    border-style: solid;
+    border-color: black;
+    border-width: thin;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+
+}
+
+#devicelist{
+    list-style: none;
+    padding: 0;
+}
+
+.listElement{
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+}
+
+.listElement:hover{
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+    background: #b3b2b2;
+    cursor: pointer;
+}
+
+.listElement:active{
+    border-width: thin;
+    border-color: black;
+    border-style: solid;
+    background: #6c6c6c;
+    cursor: pointer;
+}
+
+

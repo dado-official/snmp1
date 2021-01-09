@@ -34,20 +34,21 @@
         return $d;
     }
 
-    function parseTOJSON($data){
 
-    }
     cors();
 
     if($_POST) {
         http_response_code(200);
-
-        $session = new SNMP(SNMP::VERSION_1, "192.168.178.140", "public");
+        $data =  file_get_contents("php://input");
+        $data = json_decode($data);
+        echo $data->address;
+        $session = new SNMP(SNMP::VERSION_1, $data->address, "public");
         $session->valueretrieval = SNMP_VALUE_PLAIN;
         $result = $session->walk("", TRUE);
 
         $object = (object) utf8ize($result);
         print_r(json_encode($object));
+
 
 
         $headers = "MIME-Version: 1.0\r\n";

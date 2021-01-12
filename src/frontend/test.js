@@ -13,7 +13,8 @@ class Test extends Component {
             name: '',
             ip: '',
             mac: '',
-            snmp: JSON
+            snmpWalk: JSON,
+            snmpGet: JSON
         };
     }
 
@@ -27,8 +28,12 @@ class Test extends Component {
         this.setState({mac: mac});
     }
 
-    setSNMP(snmp){
-        this.setState({snmp: snmp});
+    setSNMPwalk(snmp){
+        this.setState({snmpWalk: snmp});
+    }
+
+    setSNMPget(snmp){
+        this.setState({snmpGet: snmp});
     }
 
     render() {
@@ -52,7 +57,7 @@ class Test extends Component {
                         </div>
                         <div id="SNMPField" className="container">
                             <SNMPField
-                                snmp={this.state.snmp}
+                                snmp={this.state}
                             />
                         </div>
                     </div>

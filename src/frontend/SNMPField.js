@@ -1,4 +1,5 @@
 import React from 'react';
+import BJSON from 'buffer-json'
 
 class SNMPField extends React.Component{
     constructor(props) {
@@ -8,29 +9,50 @@ class SNMPField extends React.Component{
         };
     }
 
+    uint8arrayToStringMethod(myUint8Arr){
+        return String.fromCharCode.apply(null, myUint8Arr);
+    }
+
     makelist(){
-        let allOIDVALUES = [];
-        if(this.props.snmp.SNMPWalk === undefined){
-            return <p> No SNMP here</p>
+        console.log("makelist")
+        let self = this;
+        console.log(this.state.snmp.snmpGet)
+        if(Object.keys(this.props.snmp.snmpGet).length !== 0 && typeof(this.props.snmp.snmpGet.value) === "object"){
+
+            return (<li>
+                {this.props.snmp.snmpGet.oid} --> {this.uint8arrayToStringMethod(Buffer.from(this.props.snmp.snmpGet.value))}
+            </li>)
+        } else if (Object.keys(this.props.snmp.snmpGet).length !== 0){
+            return (<li>
+                {this.props.snmp.snmpGet.oid} --> {this.state.snmp.snmpGet.value}
+            </li>)
+        } else if(Object.keys(this.props.snmp.snmpWalk).length !== 0){
+            let list = []
+            this.props.snmp.snmpWalk.SNMPWalk.map(function (d){
+                if(typeof(d.value) === "object"){
+                    list.push(<li>
+                        {d.oid} --> {self.uint8arrayToStringMethod(Buffer.from(d.value))}
+                    </li>)
+                } else {
+                    list.push(<li>
+                        {d.oid} --> {d.value}
+                    </li>)
+                }
+            })
+            return list
         } else {
-            this.props.snmp.SNMPWalk.map(
-                function(d){
-                    console.log(d.oid + d.value)
-                    allOIDVALUES.push(<li>
-                        OID: {d.oid}: VALUE: {d.value}
-                    </li>);
-                })
+            return <li>noch nichts da</li>
         }
-        console.log(allOIDVALUES)
-        return allOIDVALUES
     }
 
     render() {
         let self = this
         return(
-            <ul>
-                {this.makelist()}
-            </ul>
+            <div id="snmpOut">
+                <ul>
+                    {this.makelist()}
+                </ul>
+            </div>
         );
     }
 }

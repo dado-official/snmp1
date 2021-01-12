@@ -4,8 +4,14 @@
     <list default="true" id="21b20be0-8062-4a9b-bf56-a912231da00c" name="Default Changelist" comment="snmp is displayed">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/SNMPwalk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/getIPs.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/pingAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/pingAll.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/Device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/Devicelist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Devicelist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/SNMPField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/SNMPField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/mainStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/test.js" afterDir="false" />
@@ -112,6 +118,8 @@
       <workItem from="1610195627441" duration="11194000" />
       <workItem from="1610394615049" duration="5379000" />
       <workItem from="1610434427324" duration="11889000" />
+      <workItem from="1610474238878" duration="1521000" />
+      <workItem from="1610481039432" duration="11224000" />
     </task>
     <task id="LOCAL-00001" summary="1.Meilenstein">
       <created>1607067584413</created>

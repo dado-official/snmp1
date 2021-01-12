@@ -73,9 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### Meine ReadMe
-Ich habe versucht das Backend mit NodeJs zu machen, aber es hat nicht Funktioniert. Dann habe ich es mit 
-php versucht und da Funktionierts einwandfrei.
+Am Ende habe ich mich trotzdem noch für Node js entschieden weil es läuft einfach schneller.
 
-Backend: man muss die datei src/backend/backtest.php ausführen (IP vom Comuter muss eingegeben werden --> Zeile 45)
+Backend: man muss den server tarten pingAll.js
 
-Frontend: `npm start` zum starten, ausgabe der Ergebnisse erfolgt momentan nur über `console.log()`
+Frontend: `npm start` zum starten des Servers
+
+INFO: 
+-Man muss immer wenn man Netzwerk wächselt die eigene IP in Devicelist und Device eingeben in der Variable API_PATH
+-Ich habe viele dinge nicht gescafft wegen der Zeit. Ich Habe lange gebrauch um die geeignete Programmiersprache fürs Backend zu finden.

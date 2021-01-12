@@ -4,6 +4,7 @@ let app = express();
 let bodyParser = require('body-parser');
 let snmp = require ("net-snmp");
 let { StringDecoder } = require('string_decoder');
+let BJSON = require('buffer-json')
 const find = require('local-devices');
 
 
@@ -43,10 +44,9 @@ app.post("/snmpGet", function (req, res){
                         oid: varbinds[i].oid,
                         value: varbinds[i].value
                     }
+
                     res.json(data)
                 }
-
-
             }
         }
     });
@@ -63,11 +63,11 @@ app.post("/snmpWalk", function (req, res){
     function doneCb (error) {
         if (error){
             console.error (error.toString ());
-            res.json(jString)
         } else {
             console.log(jString)
-            res.json(jString);
         }
+        res.setHeader('Content-Type', 'application/json');
+        res.json(jString);
     }
 
     function feedCb (varbinds) {
@@ -88,8 +88,6 @@ app.post("/snmpWalk", function (req, res){
 
     console.log("Starting SNMP walk: " + req.body.addr)
     session.walk (oid, feedCb, doneCb)
-
-
 });
 
 

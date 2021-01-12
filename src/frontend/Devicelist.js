@@ -3,7 +3,7 @@ import axios from "axios";
 import Device from "./Device";
 import "./mainStyle.css"
 
-const API_PATH_get_IPs = 'http://10.10.30.239:3000/areAlive'
+const API_PATH_get_IPs = 'http://10.42.0.1:3000/areAlive'
 
 class Devicelist extends React.Component{
     constructor(props) {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from "axios";
 
-let API_PATH_SNMP_walk = 'http://10.10.30.239:3000/snmpWalk'
+let API_PATH = 'http://10.42.0.1:3000/'
 class Device extends Component {
     constructor(props) {
         super(props);
@@ -9,11 +9,14 @@ class Device extends Component {
             name: this.props.name,
             ip: this.props.ip,
             mac: this.props.mac,
-            snmpwalk: JSON
+            snmpwalk: JSON,
+            value: ''
         };
+
+        this.handleChange = this.handleChange.bind(this);
     }
 
-    getSNMP(ip){
+    SNMPwalk(ip){
         console.log("start SNMP walk")
         let data = {addr:ip};
         let self = this;
@@ -25,7 +28,7 @@ class Device extends Component {
 
         let config = {
             method: 'post',
-            url: API_PATH_SNMP_walk,
+            url: API_PATH + 'snmpWalk',
             headers: HEADERS,
             data : data
         };
@@ -33,7 +36,44 @@ class Device extends Component {
         axios(config)
             .then(function (response) {
                 console.log(response.data);
-                self.props.parent.setSNMP(response.data)
+                self.props.parent.setSNMPwalk(response.data)
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    }
+
+    handleChange(event){
+        this.setState({value: event.target.value})
+    }
+
+    SNMPget(ip){
+        console.log("start SNMP get")
+        let self = this;
+        let oid = [];
+        oid.push(this.state.value)
+        let data = {
+            addr: ip,
+            oid: oid
+        };
+        console.log(data)
+
+        const HEADERS = {
+            mode: 'cors',
+            credentials: 'include'
+        }
+
+        let config = {
+            method: 'post',
+            url: API_PATH + 'snmpGet',
+            headers: HEADERS,
+            data : data
+        };
+
+        axios(config)
+            .then(function (response) {
+                console.log(response.data);
+                self.props.parent.setSNMPget(response.data)
             })
             .catch(function (error) {
                 console.log(error);
@@ -41,7 +81,6 @@ class Device extends Component {
     }
 
     render() {
-        console.log(this.props.ip)
         return(
             <div>
                 <div>
@@ -50,10 +89,14 @@ class Device extends Component {
                     <p>Device mac: '{this.props.mac}'</p>
                 </div>
                 <div>
-                    <button onClick={() => this.getSNMP(this.props.ip)}
-                    >SNMP walk</button><br/>
-                    <input/>
-                    <button>SNMP get</button>
+                    <div id="oid">
+                        <p>OID:</p>
+                        <input type="text" value={this.state.value} onChange={this.handleChange} /><br/>
+                        <div id="buttonsDev">
+                            <button className="buttonDevice" onClick={() => this.SNMPget(this.props.ip)}>SNMP get</button>
+                            <button className="buttonDevice" onClick={() => this.SNMPwalk(this.props.ip)}>SNMP walk</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

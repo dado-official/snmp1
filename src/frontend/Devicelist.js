@@ -1,8 +1,9 @@
 import React from 'react';
 import axios from "axios";
+import Device from "./Device";
 import "./mainStyle.css"
 
-const API_PATH_get_IPs = 'http://192.168.178.67:3000/isAlive'
+const API_PATH_get_IPs = 'http://10.10.30.239:3000/areAlive'
 
 class Devicelist extends React.Component{
     constructor(props) {
@@ -14,63 +15,47 @@ class Devicelist extends React.Component{
     }
 
 
-    isalive(address, state){
+    areAlive(){
         let self = this;
-        //let data = );
-        //console.log(data)
         const HEADERS = {
             mode: 'cors',
             credentials: 'include',
-            contentType: 'application/json'
         }
 
-        const data = {
-            addr: address
-        };
-
         let config = {
-            method: 'post',
+            method: 'get',
             url: API_PATH_get_IPs,
             headers: HEADERS,
-            data : data
+            data : "data"
         };
-
 
 
         axios(config)
             .then(function (response) {
                 console.log(response.data)
-                if(response.data){
-                    let joined = self.state.devices.push(address);
-                    console.log(joined)
-                    self.setState({list: joined})
-                }
+                self.setState({devices: response.data})
             })
             .catch(function (error) {
                 console.log(error);
             });
     }
 
-    async alldevices(){
-        let pre = "192.168.178."
-        let dev = [];
-        for(let i = 1; i < 254; i++){
-            let addr = pre + i;
-            await this.isalive(addr);
-        }
+    componentDidMount() {
+        console.log("compnent did mount")
+        this.areAlive()
     }
-
-    async componentDidMount() {
-        await this.alldevices()
-    }
-
 
     render() {
+        let self = this;
         return(<div>
             <p>Device List</p>
             <ul id="devicelist">
-                {this.state.devices.map(function(item) {
-                    return <li className="listElement" key={item}>{item}</li>;
+                {this.state.devices.map(function(d){
+                    if(d.name === '?'){
+                        return (<li onClick={() => self.props.parent.setDevicePar(d.name, d.ip, d.mac)} key={d.ip} className="listElement">{d.ip}</li>)
+                    } else {
+                        return (<li onClick={() => self.props.parent.setDevicePar(d.name, d.ip, d.mac)} key={d.ip} className="listElement">{d.name} (d.ip))</li>)
+                    }
                 })}
             </ul>
         </div>);

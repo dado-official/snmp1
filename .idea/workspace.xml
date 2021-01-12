@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21b20be0-8062-4a9b-bf56-a912231da00c" name="Default Changelist" comment="2. Meilenstein&#10;Cors fixed&#10;php returning JSON">
-      <change afterPath="$PROJECT_DIR$/src/backend/getIPs.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/backend/pingAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/Devicelist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/mainStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/Device.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/SNMPField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/backtest.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/SNMPwalk.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/getDevices.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/net-snmp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/pingAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/pingAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/Devicelist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Devicelist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/mainStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +58,7 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="npm.npm start">
+  <component name="RunManager" selected="Node.js.pingAll.js">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -116,6 +112,9 @@
       <workItem from="1610095919071" duration="1470000" />
       <workItem from="1610097724381" duration="7491000" />
       <workItem from="1610131326357" duration="14756000" />
+      <workItem from="1610195627441" duration="11194000" />
+      <workItem from="1610394615049" duration="5379000" />
+      <workItem from="1610434427324" duration="3946000" />
     </task>
     <task id="LOCAL-00001" summary="1.Meilenstein">
       <created>1607067584413</created>

@@ -13,6 +13,7 @@
     "dgram": "^1.0.1",
     "express": "^4.17.1",
     "json": "^10.0.0",
+    "local-devices": "^3.1.0",
     "net-snmp": "^2.10.0",
     "ping": "^0.4.0",
     "react": "^17.0.1",
@@ -20,6 +21,7 @@
     "react-ping": "^2.0.0",
     "react-scripts": "4.0.1",
     "snmp-native": "^1.2.0",
+    "utf8": "^3.0.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {

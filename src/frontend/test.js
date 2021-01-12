@@ -1,49 +1,34 @@
 import React, {Component} from 'react';
 import axios from 'axios'
+import Device from "./Device";
+import SNMPField from "./SNMPField";
 import "./mainStyle.css"
 import Devicelist from "./Devicelist";
-const API_PATH_SNMP_walk = 'http://10.171.154.141:8080/SNMPwalk.php'
-
-
 
 class Test extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            state_devices: JSON
+            state_devices: JSON,
+            name: '',
+            ip: '',
+            mac: '',
+            snmp: JSON
         };
     }
-
-    getSNMP(ip){
-        console.log("start SNMP walk")
-        let data = JSON.stringify({"address":ip});
-
-        const HEADERS = {
-            mode: 'cors',
-            credentials: 'include'
-        }
-
-        let config = {
-            method: 'post',
-            url: API_PATH_SNMP_walk,
-            headers: HEADERS,
-            data : data
-        };
-
-        axios(config)
-            .then(function (response) {
-                console.log(response.data);
-                //this.setState({devices: response.data})
-            })
-            .catch(function (error) {
-                console.log(error);
-            });
-    }
-
-
 
     componentDidMount() {
 
+    }
+
+    setDevicePar(name, ip, mac){
+        this.setState({name: name});
+        this.setState({ip: ip});
+        this.setState({mac: mac});
+    }
+
+    setSNMP(snmp){
+        this.setState({snmp: snmp});
     }
 
     render() {
@@ -57,13 +42,20 @@ class Test extends Component {
                 </div>
                 <div id="contaiermain">
                     <div id="left" className="container">
-                        <Devicelist/>
+                        <Devicelist parent={this}/>
                     </div>
                     <div id="middle" className="container">
-                        <p>test</p>
+                        <Device
+                            parent={this}
+                            name={this.state.name}
+                            ip={this.state.ip}
+                            mac={this.state.mac}
+                        />
                     </div>
                     <div id="right" className="container">
-                        <p>test</p>
+                        <SNMPField
+                            snmp={this.state.snmp}
+                        />
                     </div>
                 </div>
 

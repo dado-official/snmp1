@@ -11,7 +11,7 @@ html, body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #a1a1a1;
+    background: white;
 }
 
 .container{
@@ -19,6 +19,7 @@ html, body {
     border-style: solid;
     border-width: thin;
     margin: 0.2%;
+
     width: 100%;
 }
 
@@ -59,20 +60,21 @@ html, body {
     border-width: thin;
     border-color: black;
     border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+    margin-top: 0.5%;
+    padding: 0.5%;
+    background: #ff6900;
 }
 
 .listElement:hover{
-    border-width: thin;
-    border-color: black;
-    border-style: solid;
     background: #b3b2b2;
     cursor: pointer;
 }
 
 .listElement:active{
-    border-width: thin;
-    border-color: black;
-    border-style: solid;
     background: #6c6c6c;
     cursor: pointer;
 }

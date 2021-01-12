@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21b20be0-8062-4a9b-bf56-a912231da00c" name="Default Changelist" comment="2. Meilenstein&#10;Cors fixed&#10;php returning JSON">
-      <change afterPath="$PROJECT_DIR$/src/frontend/Device.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/SNMPField.js" afterDir="false" />
+    <list default="true" id="21b20be0-8062-4a9b-bf56-a912231da00c" name="Default Changelist" comment="snmp is displayed">
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/backend/pingAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/pingAll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/Devicelist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Devicelist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/Device.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/Device.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/SNMPField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/SNMPField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/mainStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/mainStyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/test.js" afterDir="false" />
     </list>
@@ -58,7 +55,7 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Node.js.pingAll.js">
+  <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -114,7 +111,7 @@
       <workItem from="1610131326357" duration="14756000" />
       <workItem from="1610195627441" duration="11194000" />
       <workItem from="1610394615049" duration="5379000" />
-      <workItem from="1610434427324" duration="3946000" />
+      <workItem from="1610434427324" duration="11889000" />
     </task>
     <task id="LOCAL-00001" summary="1.Meilenstein">
       <created>1607067584413</created>
@@ -151,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607602325893</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="snmp is displayed">
+      <created>1610438389134</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610438389134</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +178,8 @@
     <MESSAGE value="1.1Meilenstein" />
     <MESSAGE value="2. Meilenstein&#10;Erste erfolge mit php" />
     <MESSAGE value="2. Meilenstein&#10;Cors fixed&#10;php returning JSON" />
-    <option name="LAST_COMMIT_MESSAGE" value="2. Meilenstein&#10;Cors fixed&#10;php returning JSON" />
+    <MESSAGE value="snmp is displayed" />
+    <option name="LAST_COMMIT_MESSAGE" value="snmp is displayed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

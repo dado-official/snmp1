@@ -1,9 +1,24 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
 #nav{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     background: #ff6600;
     width: 100%;
+    height: 5%;
 }
 
 html, body {
@@ -18,15 +33,14 @@ html, body {
     border-color: black;
     border-style: solid;
     border-width: thin;
-    margin: 0.2%;
 
-    width: 100%;
 }
 
 #contaiermain{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: 95%;
 }
 
 #top{
@@ -62,11 +76,12 @@ html, body {
     border-style: solid;
     border-left-style: none;
     border-right-style: none;
-    font-family: "Lucida Console", "Courier New", monospace;
+    border-bottom-style: none;
 
-    margin-top: 0.5%;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 11px;
+
     padding: 0.5%;
-    background: #ff6900;
 }
 
 .listElement:hover{
@@ -77,6 +92,27 @@ html, body {
 .listElement:active{
     background: #6c6c6c;
     cursor: pointer;
+}
+
+#Devicelist{
+    width: 25%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#Device{
+    width: 100%;
+    height: 30%
+}
+
+#SNMPField{
+    width: 100%;
+    height: 70%;
+    overflow-y: scroll;
+}
+
+#right{
+    width: 100%;
 }
 
 

@@ -50,9 +50,10 @@ class Device extends Component {
                     <p>Device mac: '{this.props.mac}'</p>
                 </div>
                 <div>
-                    <button className="button"
-                            onClick={() => this.getSNMP(this.props.ip)}
-                    >Start SNMP walk</button>
+                    <button onClick={() => this.getSNMP(this.props.ip)}
+                    >SNMP walk</button><br/>
+                    <input/>
+                    <button>SNMP get</button>
                 </div>
             </div>
         );

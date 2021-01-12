@@ -33,29 +33,28 @@ class Test extends Component {
 
     render() {
         return(
-            <div id="main">
+            <div id="wrapper">
                 <div id="nav">
                     <p>SNMP TOOL</p>
                 </div>
-                <div id="top">
-                    <button className="button" onClick={() => this.getSNMP("10.42.0.41")}>Start SNMP</button>
-                </div>
                 <div id="contaiermain">
-                    <div id="left" className="container">
-                        <Devicelist parent={this}/>
+                    <div id="Devicelist" className="container">
+                        <Devicelist  parent={this}/>
                     </div>
-                    <div id="middle" className="container">
-                        <Device
-                            parent={this}
-                            name={this.state.name}
-                            ip={this.state.ip}
-                            mac={this.state.mac}
-                        />
-                    </div>
-                    <div id="right" className="container">
-                        <SNMPField
-                            snmp={this.state.snmp}
-                        />
+                    <div id="right">
+                        <div id="Device" className="container">
+                            <Device
+                                parent={this}
+                                name={this.state.name}
+                                ip={this.state.ip}
+                                mac={this.state.mac}
+                            />
+                        </div>
+                        <div id="SNMPField" className="container">
+                            <SNMPField
+                                snmp={this.state.snmp}
+                            />
+                        </div>
                     </div>
                 </div>
 

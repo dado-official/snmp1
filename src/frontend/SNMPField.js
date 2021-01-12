@@ -9,15 +9,28 @@ class SNMPField extends React.Component{
     }
 
     makelist(){
-
+        let allOIDVALUES = [];
+        if(this.props.snmp.SNMPWalk === undefined){
+            return <p> No SNMP here</p>
+        } else {
+            this.props.snmp.SNMPWalk.map(
+                function(d){
+                    console.log(d.oid + d.value)
+                    allOIDVALUES.push(<li>
+                        OID: {d.oid}: VALUE: {d.value}
+                    </li>);
+                })
+        }
+        console.log(allOIDVALUES)
+        return allOIDVALUES
     }
 
     render() {
-        let self = this;
+        let self = this
         return(
-            <div>
-                {<pre>{JSON.stringify(this.props.snmp, null, 2) }</pre>}
-            </div>
+            <ul>
+                {this.makelist()}
+            </ul>
         );
     }
 }

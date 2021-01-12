@@ -25,6 +25,33 @@ app.get("/areAlive",  function(req, res){
     })
 });
 
+app.post("/snmpGet", function (req, res){
+    let session = snmp.createSession (req.body.addr, "public");
+    console.log("SNMP get: " + req.body.oid)
+    session.get (req.body.oid, function (error, varbinds) {
+        if (error) {
+            console.error (error.toString ());
+            res.json({err: error.toString()})
+        } else {
+            for (let i = 0; i < varbinds.length; i++) {
+                if (snmp.isVarbindError (varbinds[i])){
+                    console.error (snmp.varbindError (varbinds[i]));
+                    res.json({err: snmp.varbindError (varbinds[i])});
+                } else {
+                    console.log (varbinds[i].oid + "|" + varbinds[i].value);
+                    let data = {
+                        oid: varbinds[i].oid,
+                        value: varbinds[i].value
+                    }
+                    res.json(data)
+                }
+
+
+            }
+        }
+    });
+})
+
 app.post("/snmpWalk", function (req, res){
     console.log(req.body)
     let session = snmp.createSession (req.body.addr, "public");
